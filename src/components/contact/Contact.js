@@ -1,10 +1,14 @@
 import React from 'react'
 import "./contact.scss"
+//import { handleTwilio } from '../../twilio';
 
 export default function Contact() {
 
+    const [message, setMessage] = React.useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        setMessage(true);
     }
 
     return (
@@ -18,6 +22,7 @@ export default function Contact() {
                     <input type="text" placeholder='Email'/>
                     <textarea placeholder='Message'></textarea>
                     <button type='submit'>Send</button>
+                    {message && <span>Thanks, I'll reply ASAP :)</span>}
                 </form>
             </div>
         </div>
