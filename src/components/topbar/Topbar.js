@@ -24,14 +24,6 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                         <Whatshot  className='logo'/>
                     </Link>
                     <div className='itemContainer'>
-                        <Person className='icon'/>
-                        <span>(408) 596 6270</span>
-                    </div>
-                    <div className='itemContainer'>
-                        <Mail className='icon'/>
-                        <span>richardye980718@gmail.com</span>
-                    </div>
-                    <div className='itemContainer'>
                         <Link href="https://github.com/tianyefan" target="_blank" >
                             <GitHub className='icon' />
                         </Link>  

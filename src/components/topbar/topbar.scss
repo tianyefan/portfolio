@@ -3,7 +3,7 @@
 
 .topbar {
    width: 100%;
-   height: 70px;
+   height: 100px;
    background-color: white;
    color: $mainColor;
    position: fixed;
@@ -24,19 +24,12 @@
          .logo{
             font-size: 60px;
             color: red;
-            //font-weight: 700;
-            //text-decoration: none;
-            //color: inherit;
-            //margin-right: 40px;
          }
          .itemContainer{
             display: flex;
             align-items: center;
             margin-left: 50px;
 
-            @include mobile{
-               display: none;
-            }
 
             .icon{
                font-size: 25px;

@@ -14,22 +14,26 @@
         overflow-y: hidden;
         background-color: white;
         .imgContainer{
-            width:  700px;
-            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:  100%;
+            height: 100%;
             overflow-y: hidden;    
             float: center;
 
             @include mobile{
+                margin-top: 100px;
                 align-items: flex-start;
             }
 
             img{
-                height: 100%;
+                height: 80%;
                 margin: 30px 30px;
-                padding: 20px 30px 50px 30px;
+                border-radius: 50px;
 
                 @include mobile {
-                    height: 50%;
+                    height: 70%;
                 }
             }
         }
@@ -97,6 +101,9 @@
 
             img{
                 width: 45px;
+                @include mobile{
+                    width: 20px;
+                }
                 animation: arrowBlink 2s infinite;
             }
 
