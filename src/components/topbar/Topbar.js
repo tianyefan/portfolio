@@ -1,6 +1,6 @@
 import React from 'react';
 import "./topbar.scss";
-import {Person, Mail, GitHub, LinkedIn, Whatshot} from "@material-ui/icons";
+import {GitHub, LinkedIn, Whatshot} from "@material-ui/icons";
 import Link from '@material-ui/core/Link';
 export default function Topbar({menuOpen, setMenuOpen}) {
 
