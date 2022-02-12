@@ -30,6 +30,7 @@
             align-content: flex-start;
             overflow-y: hidden;
             flex-wrap: wrap;
+            transition: all 0.5s ease;
             @include mobile{
                 width: 100%;
             }
