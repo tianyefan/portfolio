@@ -199,19 +199,19 @@ export const designPortfolio = [
 export const contentPortfolio = [
   {
     id: 1,
-    title: "Content Social Media App",
+    title: "Video Editing",
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      "https://i.postimg.cc/qR1j1G7w/Screenshot-2022-02-16-at-18-19-28-105-bilibili.png",
     tag: ['React', 'Sanity', 'Netlify'],
-    url: 'https://shareme-socialmedia.netlify.app/'
+    url: 'https://www.bilibili.com/video/BV1e5411K7nZ/'
   },
   {
     id: 2,
-    title: "Content Rampa UI Design",
+    title: "Anime Music Video",
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      "https://i.postimg.cc/7PmQYqwc/Screenshot-2022-02-16-at-19-16-03-Tortoise-Knight-bilibili.png",
     tag: ['React', 'Sanity', 'Netlify'],
-    url: 'https://shareme-socialmedia.netlify.app/'
+    url: 'https://www.bilibili.com/video/BV1SK4y1X7iy/'
   },
   {
     id: 3,
