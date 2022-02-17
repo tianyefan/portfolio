@@ -201,7 +201,7 @@ export const contentPortfolio = [
     id: 1,
     title: "Video Editing",
     img:
-      "https://i.postimg.cc/qR1j1G7w/Screenshot-2022-02-16-at-18-19-28-105-bilibili.png",
+      "https://i.postimg.cc/Qxys4Hxk/Screenshot-2022-02-16-at-21-13-46-105-bilibili.png",
     tag: ['React', 'Sanity', 'Netlify'],
     url: 'https://www.bilibili.com/video/BV1e5411K7nZ/'
   },
@@ -209,7 +209,7 @@ export const contentPortfolio = [
     id: 2,
     title: "Anime Music Video",
     img:
-      "https://i.postimg.cc/7PmQYqwc/Screenshot-2022-02-16-at-19-16-03-Tortoise-Knight-bilibili.png",
+      "https://i.postimg.cc/4y3kwTDS/Screenshot-2022-02-16-at-21-14-33-Tortoise-Knight-bilibili.png",
     tag: ['React', 'Sanity', 'Netlify'],
     url: 'https://www.bilibili.com/video/BV1SK4y1X7iy/'
   },
