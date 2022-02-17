@@ -1,11 +1,15 @@
 import React from 'react'
 import PortfolioList from '../portfolioList/PortfolioList';
 import "./portfolio.scss"
-import { featuredPortfolio,
-         webPortfolio,
-         mobilePortfolio,
-         designPortfolio,
-         contentPortfolio} from '../../data';   
+import {
+    featuredPortfolio,
+    webPortfolio,
+    mobilePortfolio,
+    designPortfolio,
+    contentPortfolio
+} from '../../data';
+import { LinkTwoTone } from '@material-ui/icons';
+import Link from '@material-ui/core/Link';
 
 export default function Portfolio() {
 
@@ -13,29 +17,29 @@ export default function Portfolio() {
     const [data, setData] = React.useState([]);
     const list = [
         {
-          id: "featured",
-          title: "Featured",
+            id: "featured",
+            title: "Featured",
         },
         {
-          id: "web",
-          title: "Web",
+            id: "web",
+            title: "Web",
         },
         {
-          id: "mobile",
-          title: "Mobile",
+            id: "mobile",
+            title: "Mobile",
         },
         {
-          id: "design",
-          title: "Design",
+            id: "design",
+            title: "Design",
         },
         {
-          id: "content",
-          title: "Content",
+            id: "content",
+            title: "Content",
         },
-      ];
+    ];
 
-      React.useEffect(()=> {
-        switch(selected){
+    React.useEffect(() => {
+        switch (selected) {
             case "featured":
                 setData(featuredPortfolio);
                 break;
@@ -51,10 +55,10 @@ export default function Portfolio() {
             case "content":
                 setData(contentPortfolio);
                 break;
-                default:
-                    setData(featuredPortfolio);
+            default:
+                setData(featuredPortfolio);
         }
-      },[selected])
+    }, [selected])
 
     return (
         <div className='portfolio' id='portfolio'>
@@ -62,13 +66,19 @@ export default function Portfolio() {
                 <h1>Projects</h1>
                 <div className='container'>
                     {data.map((d) => (
-                    <div className='item'>
-                        <img 
-                            src={d.img}
-                            alt=''
-                        />
-                        <h3>{d.title}</h3>
-                    </div>
+                        <>
+                            <div className='item' >
+                                <img
+                                    src={d.img}
+                                    alt=''
+                                />
+                                <h3>{d.title}</h3>
+                                <Link href={d.url} target="_blank">
+                                    <LinkTwoTone className='icon'/>
+                                </Link>
+                                
+                            </div>
+                        </>
                     ))}
                 </div>
             </div>
@@ -76,18 +86,18 @@ export default function Portfolio() {
             <div className='right'>
                 <ul>
                     {list.map(item => (
-                        <PortfolioList 
-                            title={item.title} 
-                            active={selected === item.id} 
-                            setSelected={setSelected} 
+                        <PortfolioList
+                            title={item.title}
+                            active={selected === item.id}
+                            setSelected={setSelected}
                             id={item.id}
                         />
                     ))}
                 </ul>
             </div>
-            
-            
-            
+
+
+
         </div>
     )
 }
